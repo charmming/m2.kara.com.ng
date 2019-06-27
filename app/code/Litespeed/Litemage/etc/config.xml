@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package   LiteSpeed_LiteMage
+ * @copyright  Copyright (c) LiteSpeed Technologies, Inc. All rights reserved. (https://www.litespeedtech.com)
+ * @license     https://opensource.org/licenses/GPL-3.0
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <litemage>
+            <general>
+                <contextbypass/>
+                <custom_vary>0</custom_vary>
+            </general>
+            <dev>
+                <debug>0</debug>
+                <debug_ips/>
+                <debug_trace>0</debug_trace>
+            </dev>
+        </litemage>
+    </default>
+</config>

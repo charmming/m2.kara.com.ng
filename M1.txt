@@ -1,0 +1,5 @@
+version: 1.9.1.0
+key: 02a5ea86407eb074e2423e853228a118
+database: karacomn_m1
+user: karacomn_m2
+password: jbeOOQd*I.#U

@@ -1,0 +1,7 @@
+[22-Jun-2019 12:36:11 UTC] PHP Warning:  Unsupported declare 'strict_types' in /home/karacomn/m2.kara.com.ng/vendor/magento/inventory-composer-installer/src/Plugin.php on line 6
+[22-Jun-2019 12:36:11 UTC] PHP Parse error:  syntax error, unexpected ':', expecting ';' or '{' in /home/karacomn/m2.kara.com.ng/vendor/magento/inventory-composer-installer/src/Plugin.php on line 55
+[22-Jun-2019 12:36:47 UTC] PHP Warning:  Unsupported declare 'strict_types' in /home/karacomn/m2.kara.com.ng/vendor/magento/inventory-composer-installer/src/Plugin.php on line 6
+[22-Jun-2019 12:36:47 UTC] PHP Parse error:  syntax error, unexpected ':', expecting ';' or '{' in /home/karacomn/m2.kara.com.ng/vendor/magento/inventory-composer-installer/src/Plugin.php on line 55
+[27-Jun-2019 07:46:23 UTC] PHP Warning:  proc_open(): fork failed - Cannot allocate memory in phar:///opt/cpanel/composer/bin/composer/vendor/symfony/console/Application.php on line 954
+[27-Jun-2019 07:58:50 UTC] PHP Fatal error:  Class 'Mageplaza\Core\Helper\AbstractData' not found in /home/karacomn/m2.kara.com.ng/app/code/Mageplaza/Smtp/Helper/Data.php on line 33
+[27-Jun-2019 08:04:00 UTC] PHP Fatal error:  Class 'Mageplaza\Core\Helper\AbstractData' not found in /home/karacomn/m2.kara.com.ng/app/code/Mageplaza/Smtp/Helper/Data.php on line 33

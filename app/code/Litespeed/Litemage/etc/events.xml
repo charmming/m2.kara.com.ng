@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package   LiteSpeed_LiteMage
+ * @copyright  Copyright (c) LiteSpeed Technologies, Inc. All rights reserved. (https://www.litespeedtech.com)
+ * @license     https://opensource.org/licenses/GPL-3.0
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <!-- flush all -->
+    <event name="adminhtml_cache_flush_system">
+        <observer name="litemage_purge_all" instance="Litespeed\Litemage\Observer\FlushAllCache"/>
+    </event>
+    <event name="adminhtml_cache_flush_all">
+        <observer name="litemage_purge_all" instance="Litespeed\Litemage\Observer\FlushAllCache"/>
+    </event>
+    <event name="clean_media_cache_after">
+        <observer name="litemage_purge_all" instance="Litespeed\Litemage\Observer\FlushAllCache"/>
+    </event>
+    <event name="clean_catalog_images_cache_after">
+        <observer name="litemage_purge_all" instance="Litespeed\Litemage\Observer\FlushAllCache"/>
+    </event>
+    <event name="adminhtml_cache_refresh_type">
+        <observer name="litemage_purge_all" instance="Litespeed\Litemage\Observer\FlushAllCache"/>
+    </event>
+    <!-- flush by tags -->
+    <event name="clean_cache_by_tags">
+        <observer name="litemage_purge_tags" instance="Litespeed\Litemage\Observer\FlushCacheByTags"/>
+    </event>
+    <event name="assigned_theme_changed">
+        <observer name="litemage_purge_tags" instance="Litespeed\Litemage\Observer\FlushCacheByTags"/>
+    </event>
+    <event name="catalogrule_after_apply">
+        <observer name="litemage_purge_tags" instance="Litespeed\Litemage\Observer\FlushCacheByTags"/>
+    </event>
+    <event name="controller_action_postdispatch_adminhtml_catalog_product_action_attribute_save">
+        <observer name="litemage_purge_tags" instance="Litespeed\Litemage\Observer\FlushCacheByTags"/>
+    </event>
+    <event name="controller_action_postdispatch_adminhtml_catalog_product_massStatus">
+        <observer name="litemage_purge_tags" instance="Litespeed\Litemage\Observer\FlushCacheByTags"/>
+    </event>
+    <event name="controller_action_postdispatch_catalog_product_save">
+        <observer name="litemage_purge_tags" instance="Litespeed\Litemage\Observer\FlushCacheByTags"/>
+    </event>
+    <event name="clean_cache_after_reindex">
+        <observer name="litemage_purge_tags" instance="Litespeed\Litemage\Observer\FlushCacheByTags"/>
+    </event>
+    <event name="catalog_category_save_after">
+        <observer name="litemage_purge_events" instance="Litespeed\Litemage\Observer\FlushCacheByEvents" />
+    </event>
+    <event name="catalog_category_delete_after">
+        <observer name="litemage_purge_events" instance="Litespeed\Litemage\Observer\FlushCacheByEvents" />
+    </event>
+    <event name="litemage_cli_purge">
+        <observer name="litemage_cli_purge" instance="Litespeed\Litemage\Observer\FlushCacheByCli"/>
+    </event>
+    <event name="litemage_purge">
+        <observer name="litemage_purge_internal" instance="Litespeed\Litemage\Observer\FlushCacheByEvents"/>
+    </event>
+    
+</config>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package   LiteSpeed_LiteMage
+ * @copyright  Copyright (c) LiteSpeed Technologies, Inc. All rights reserved. (https://www.litespeedtech.com)
+ * @license     https://opensource.org/licenses/GPL-3.0
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="core_layout_render_element">
+        <observer name="litemage_layout_render" instance="Litespeed\Litemage\Observer\LayoutRenderElement" />
+    </event>
+    <event name="layout_generate_blocks_after">
+        <observer name="litemage_layout_generator" instance="Litespeed\Litemage\Observer\LayoutGenerateBlocksAfter" />
+    </event>
+</config>

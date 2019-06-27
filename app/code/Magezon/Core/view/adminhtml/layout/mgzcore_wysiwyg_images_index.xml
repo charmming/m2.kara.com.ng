@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magezon
+ *
+ * This source file is subject to the Magezon Software License, which is available at https://www.magezon.com/license/.
+ * Do not edit or add to this file if you wish to upgrade the to newer versions in the future.
+ * If you wish to customize this module for your needs.
+ * Please refer to https://magento.com for more information.
+ *
+ * @category  Magezon
+ * @package   Magezon_Core
+ * @copyright Copyright (C) 2018 Magezon (https://www.magezon.com)
+ */
+-->
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/layout_generic.xsd">
+    <container name="root">
+        <block class="Magento\Cms\Block\Adminhtml\Wysiwyg\Images\Content" name="wysiwyg_images.content" template="Magezon_Core::browser/content.phtml">
+            <block class="Magento\Cms\Block\Adminhtml\Wysiwyg\Images\Tree" name="wysiwyg_images.tree" template="browser/tree.phtml"/>
+            <block class="Magento\Cms\Block\Adminhtml\Wysiwyg\Images\Content\Uploader" name="wysiwyg_images.uploader" template="Magento_Cms::browser/content/uploader.phtml"/>
+        </block>
+    </container>
+</layout>

@@ -1,0 +1,3 @@
+.navigation, .breadcrumbs .items, .catalog-category-view .page-main .breadcrumbs, .catalog-category-view .page-main .columns, .page-header .header.panel, .header.content, .footer.content, .page-wrapper > .widget, .page-wrapper > .page-bottom, .block.category.event, .page-main, .page-container > .content, .jumbotron > .container, .page-before-footer > .content, .block-highlight, .top-container .easybanner-banner, .cms-index-index .column.main .easybanner-placeholder-wrapper, .cms-index-index .block-promo.block-carousel .block-content{max-width:1027px;}
+.nav-sections .navigation a.level-top{font-size:12px;}
+.nav-sections .navigation .navpro-departments .navpro-dropdown-level1 .children a{font-size:14px;}

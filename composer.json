@@ -12,7 +12,8 @@
     },
     "require": {
         "magento/data-migration-tool": "2.3.1",
-        "magento/product-community-edition": "2.3.1"
+        "magento/product-community-edition": "2.3.1",
+        "swissup/argento-m2": "^1.11"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "~2.13.0",
@@ -69,6 +70,10 @@
         "data-migration-tool": {
             "type": "git",
             "url": "https://github.com/magento/data-migration-tool"
+        },
+        "swissuplabs": {
+            "type": "composer",
+            "url": "https://ci.swissuplabs.com/api/packages.json"
         }
     },
     "extra": {
